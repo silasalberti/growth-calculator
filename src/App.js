@@ -204,8 +204,12 @@ function App(props) {
           <div className="card body py-7 px-10">
             <div className="grid grid-cols-4 lg:grid-cols-5 gap-6">
               <div className="col-span-4 lg:col-span-5 flex items-center">
-                <img src={logo} alt="Fulfin Logo" className="h-10 mr-4" />
-                <h1 className="text-3xl font-bold text-neutral">
+                <img
+                  src={logo}
+                  alt="Fulfin Logo"
+                  className="h-9 sm:h-10 mr-4"
+                />
+                <h1 className="text-2xl sm:text-3xl font-bold text-neutral">
                   Growth Calculator
                 </h1>
               </div>
