@@ -526,6 +526,9 @@ function App(props) {
             </div>
             <div className="grid my-10 gap-6 grid-cols-1 md:grid-cols-2">
               <div>
+                <h2 className="text-2xl font-medium text-neutral mb-3">
+                  With Financing
+                </h2>
                 {!calculationWithLeverage.profitable ? (
                   <div className="alert alert-warning shadow-lg">
                     <div>
@@ -549,15 +552,13 @@ function App(props) {
                     </div>
                   </div>
                 ) : (
-                  <div>
-                    <h2 className="text-2xl font-medium text-neutral mb-3">
-                      With Financing
-                    </h2>
-                    <Table table={calculationWithLeverage.table} />
-                  </div>
+                  <Table table={calculationWithLeverage.table} />
                 )}
               </div>
               <div>
+                <h2 className="text-2xl font-medium mb-3 text-neutral">
+                  Without Financing
+                </h2>
                 {!calculationWithoutLeverage.profitable ? (
                   <div className="alert alert-warning shadow-lg">
                     <div>
@@ -581,12 +582,7 @@ function App(props) {
                     </div>
                   </div>
                 ) : (
-                  <div>
-                    <h2 className="text-2xl font-medium mb-3 text-neutral">
-                      Without Financing
-                    </h2>
-                    <Table table={calculationWithoutLeverage.table} />
-                  </div>
+                  <Table table={calculationWithoutLeverage.table} />
                 )}
               </div>
             </div>
