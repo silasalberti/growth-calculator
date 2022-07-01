@@ -199,7 +199,7 @@ function App(props) {
 
   return (
     <div className="w-full bg-base-200">
-      <div className="container mx-auto py-8">
+      <div className="container mx-auto p-4 sm:py-8 sm:px-0">
         <div className="card bg-base-100 shadow-2xl">
           <div className="card body py-7 px-10">
             <div className="grid grid-cols-4 lg:grid-cols-5 gap-6">
